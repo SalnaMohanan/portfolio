@@ -1,0 +1,244 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box; 
+    font-family: "Playfair Display", serif;
+
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.logo{
+    width: 150px;
+}
+.list-items{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+    
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+}
+.links:hover{
+    color: red;
+    text-decoration: underline;
+}
+.home-content{
+    margin: 13% 0px 0px 8%;
+ }
+#username{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Dancing Script", serif;
+}
+#lname{
+    font-family: "Dancing Script", serif;
+    color: brown;
+}
+#user-details{
+    line-height: 2;
+}
+#download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+
+}
+.group1{
+    position: absolute;
+    height: 400px;
+    bottom: 0%;
+    left: 60%;
+    transform: translateX(-50);
+    transition: bottom 2s, left 1s;   /*adding animation */
+}
+.home-img:hover #shape{
+    bottom: 80px;
+}
+.home-img:hover #girl{
+    left: 55%;
+}
+#about{
+    margin: 20% 0px 0px 8%;
+}
+.sectionHead{
+    text-align: center;
+    
+}
+.mainHead{
+    font-size: 35px;
+}
+.subHead{
+    font-size: 20px;
+    color:green;
+}
+.aboutBody{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    align-items: center;
+}
+.img1{
+    width:85%
+}
+.aboutContent{
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 40px;
+}
+.information{
+    margin-top: 1.3rem;
+}
+.infobox{
+
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.infobox>span{
+    margin-left: 1rem;
+}
+#skills{
+    margin: 10% 0px 0px 8%;
+}
+.skillContents{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-top: 80px;
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1.3rem 0px;
+    
+   
+}
+.barHead, .barPercent{
+    font-weight: 600;
+    font-size: 1.5 rem;
+}
+.baseBar{
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    background-color: black;
+    bottom: 0px;
+    
+
+}
+.htmlbar{
+    background-color: orange;
+    width: 84%;
+}   
+.cssbar{
+    background-color: orange;
+    width: 79%;
+}    
+.jsbar{
+    background-color: orange;
+    width: 70%;
+}    
+.reactbar{
+    background-color: orange;
+    width: 85%;
+} 
+#contacts{
+    margin: 8% 8% 0px 8%;
+
+} 
+.iconCollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}  
+.icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* border: solid 2px;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+} 
+.brands{
+    color: black;
+    font-size: 1.2rem;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,red,orange,yellow);
+}
+.icon:hover .brands{
+    color: white;
+    /* animation manualy*/
+    animation: rotate 4s;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+footer{
+    margin-top: 8%;
+
+}
+#copyright{
+    text-align: center;
+    font-weight: 600;
+}
+.upArrow{
+    float: right;
+    margin-top: -40px;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: aliceblue;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(59, 179, 23);
+    border-radius: 10px;
+}
