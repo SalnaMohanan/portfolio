@@ -1,242 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <!-- css -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- font awesome cnd link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- animate style -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <!-- aos -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  </head>
-  <body>
-    <div id="container">
-      <!-- navbar -->
-      <nav>
-        <!-- logo -->
-        <img
-          class="logo"
-          src="https://img.freepik.com/premium-vector/cute-little-girl-with-laptop-vector-illustration-cartoon-style_1142-67510.jpg"
-          alt="no image"
-        />
-        <!-- links -->
-        <ul>
-          <li class="list-items"><a class="links" href="#home">HOME</a></li>
-          <li class="list-items"><a class="links" href="#about">ABOUT</a></li>
-          <li class="list-items"><a class="links" href="#skills">SKILLS</a></li>
-          <li class="list-items"><a class="links" href="#contacts">CONTACTS</a></li>
-        </ul>
-      </nav>
-      <!-- home -->
-      <section id="home">
-        <div class="home-content">
-          <h1  class="animate__animated animate__backInLeft" id="username">I'am Maria <span id="lname">Joe</span></h1>
-          <p id="user-details">
-            This is mt official portfolio website to describe all <br />
-            Details and work experience in web development.
-          </p>
-          <a id="download" href="./image/L03-HTML_CSS.pdf" download
-            >DOWNLOAD CV
-          </a>
-        </div>
-        <div class="home-img">
-          <!-- shape -->
-          <img
-            id="shape"
-            class="group1"
-            src="./image/bg-final.png"
-            alt="no image"
-          />
-          <!-- girl -->
-          <img
-            id="girl"
-            class="group1"
-            src="./image/businesslady-final.png"
-            alt="no image"
-          />
-        </div>
-      </section>
-      <!-- About -->
-      <section id="about">
-        <div class="sectionHead">
-          <h2 class="mainHead">About Me</h2>
-          <span class="subHead">Introduction</span>
-        </div>
-        <div class="aboutBody">
-          <div data-aos="fade-up-right" class="aboutImg">
-            <img
-              class="img1"
-              src="https://img.freepik.com/premium-photo/young-girl-hr-3d-character-young-working-girl-cartoon-character-professional-girl-character_1002350-2147.jpg"
-              alt="no image"
-            />
-          </div>
-          <div class="aboutContent">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
-              eius harum optio aliquid ipsum velit in natus maxime magnam iure.
-              Aut iste officia neque quaerat libero ducimus possimus sit
-              corporis.
-            </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-            <div class="information">
-              <div class="infobox">
-                <i class="fa-solid fa-user"></i>
-                <span>Maria Joe</span>
-              </div>
-              <div class="infobox">
-                <i class="fa-solid fa-phone"></i>
-                <span>9876543210</span>
-              </div>
-              <div class="infobox">
-                <i class="fa-solid fa-envelope"></i>
-                <span>maria987@gmail.com</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- skill -->
-      <section id="skills">
-        <div class="sectionHead">
-          <h2 class="mainHead">Skills</h2>
-          <span class="subHead">My Skills</span>
-        </div>
-        <div class="skillContents">
-          <div class="progressbars">
-            <!-- progress bars -->
-            <div class="bars">
-              <h3 class="barHead">HTML</h3>
-              <span class="barPercent">84%</span>
-              <div class="baseBar"></div>
-              <div  data-aos="fade-right" class="htmlbar baseBar"></div>
-            </div>
-            <div class="bars">
-              <h3 class="barHead">CSS</h3>
-              <span class="barPercent">79%</span>
-              <div class="baseBar"></div>
-              <div  data-aos="fade-right" class="cssbar baseBar"></div>
-            </div>
-            <div class="bars">
-              <h3 class="barHead">JS</h3>
-              <span class="barPercent">70%</span>
-              <div class="baseBar"></div>
-              <div  data-aos="fade-right" class="jsbar baseBar"></div>
-            </div>
-            <div class="bars">
-              <h3 class="barHead">REACT</h3>
-              <span class="barPercent">85%</span>
-              <div class="baseBar"></div>
-              <div  data-aos="fade-right" class="reactbar baseBar"></div>
-            </div>
-          </div>
-          <div data-aos="flip-right" class="skillImage">
-            <img
-              width="55%"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK1g0clCnfP4x2gvvGSI8QunqYN-3w1h0Ryx6PgMdF3R1kZnJz2H6_pf1IJfI2WNsQbhA&usqp=CAU"
-              alt="no image"
-            />
-          </div>
-        </div>
-      </section>
-      <!-- contact -->
-      <section id="contacts">
-        <div class="sectionHead">
-          <h2 class="mainHead">Contacts</h2>
-          <span class="subHead">My Contacts</span>
-        </div>
-        <div class="iconCollection">
-          <!-- linkedin -->
-          <div class="icon">
-            <a
-              href="https://www.linkedin.com/in/salna-k-v-2001/"
-              target="_blank"
-            >
-              <i class="fa-brands fa-linkedin brands"></i
-            ></a>
-          </div>
-          <!-- gitHub -->
-          <div class="icon">
-            <a
-              href="https://www.linkedin.com/in/salna-k-v-2001/"
-              target="_blank"
-            >
-              <i class="fa-brands fa-github brands"></i
-            ></a>
-          </div>
-          <!-- twitter -->
-          <div class="icon">
-            <a
-              href="https://www.linkedin.com/in/salna-k-v-2001/"
-              target="_blank"
-            >
-              <i class="fa-brands fa-square-twitter brands"></i
-            ></a>
-          </div>
-          <!-- whatsapp -->
-          <div class="icon">
-            <a
-              href="https://www.linkedin.com/in/salna-k-v-2001/"
-              target="_blank"
-            >
-              <i class="fa-brands fa-whatsapp brands"></i
-            ></a>
-          </div>
-          <!-- facebook -->
-          <div class="icon">
-            <a
-              href="https://www.linkedin.com/in/salna-k-v-2001/"
-              target="_blank"
-              ><i class="fa-brands fa-facebook brands"></i
-            ></a>
-          </div>
-          <!-- instagram -->
-          <div class="icon">
-            <a
-              href="https://www.linkedin.com/in/salna-k-v-2001/"
-              target="_blank"
-            >
-              <i class="fa-brands fa-instagram brands"></i
-            ></a>
-          </div>
-        </div>
-      </section>
-      <!-- footer -->
-      <footer>
-        <p id="copyright">
-          &copy;My portfolio website -November 2024, All RightsReserved to &reg;
-          Maria Joe
-        </p>
-        <div class="icon upArrow">
-          <a href="#container"> <i class="fa-solid fa-angle-up brand brands"></i></a>
-        </div>
-      </footer>
+<body>
+    <div class="img1">
+        <h1>Unity in diversity</h1>
     </div>
-  </body>
-<!-- AOS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+    <div class="img2">
+        <p class="para1">India has one of the world's largest <br>collections of performing arts, music,<br> dance,paintings, and writings, <br>known as the "Intangible Cultural<br> Heritage" (ICH) of humanity. </p>
+    </div>
+    <div class="img3">
+        <p class="para2">"I am an Indian &h we celerate all festivals in every religion.That is why is called Incredible India"</p>
+    </div>
+    <div class="img4">
+
+        <p class="para3">"Those faces you see every day<br> on the streets were not created <br>entirely without hope: be kind <br>to them: like you they have <br>not escaped."</p>
+    </div>
+    <div class="img5">
+
+    </div>
+</body>
 
 </html>
